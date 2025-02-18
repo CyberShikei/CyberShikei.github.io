@@ -1,0 +1,236 @@
+:root {
+    --bg-color: #0A0A0A;/**/
+    --text-color: #BFD2C7;/**/ 
+    
+    --primary1: #0A0A0A;/*Deep black for background, evoking mystery*/ 
+    --primary2: #3B1E47;/*Dark violet with a spectral glow for accents*/ 
+
+    --secondary1: #243B55;/*A shadowy, midnight blue for contrast*/ 
+    --secondary2: #8B2C2C;/*A muted crimson for intense highlights*/ 
+
+    --accent1: #3FD2C7;/*A neon-like mystical cyan for active buttons and links*/ 
+    --accent2: #B49A67;/*A desaturated, aged gold for subtle elegance*/ 
+}
+
+body {
+    background-color: var(--primary1);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.repo-card {
+    background-color: var(--primary2);
+    padding: 20px; /* Add padding to the card to create space for text */
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px var(--secondary2);
+    color: var(--text-color);
+    transition: transform 0.3s;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--primary1);
+    animation-name: fade-bg-color;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.repo-image {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+.repo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.repo-content {
+    padding-top: 10px; /* Add some padding above the text */
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 45px;
+    border: 0;
+    /*justify-content: center;*/
+    /*max-width: 600px;*/
+    /*margin: auto;*/
+    
+    scale: 0.3;
+    /* set the grid to the left of the article*/
+    position: relative;
+    top: -50px;
+    left: -275px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+b {
+    font-weight: 900;
+}
+
+.titlebar {
+    align-self: right;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+.navbar {
+    background-color: var(--primary2);
+    padding: 10px;
+    position: fixed;
+    top: 10%;
+    right: 85%;
+    left: 5%;
+}
+
+.navbar ul{
+    /*display list items vertically*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    /*overflow: hidden;*/
+    border-radius: 6px;
+    /* set min width to 200px */
+    /*shadow color = accent2*/
+    /*float: right;
+    box-shadow: 2px 2px 2px var(--accent2);
+    transition: transform 0.2s ease-in-out;
+    background-image: linear-gradient(135deg, var(--primary1), #1A111E, var(--primary2));*/
+}
+
+.navbar ul:hover{
+    transform: scale(1.1);
+
+}
+
+.navbar a:hover{
+
+}
+
+
+.navbar a{
+    color: var(--text-color);
+    text-align: right;
+    text-decoration: none;
+    padding: 0px;
+    /*display: block;*/
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary2);
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1em;
+}
+
+a {
+    color: var(--accent1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+code {
+    background-color: #2A2A72;
+    border-radius: 6px;
+    color: #d2a8ff;
+    padding: 0.2em 0.4em;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+pre code {
+    padding: 0;
+}
+
+pre {
+    background-color: #2A2A72;
+    border-radius: 6px;
+    padding: 0.2em 0.4em;
+}
+
+blockquote {
+    background-color: #2A2A72;
+    border-left: 4px solid #30363d;
+    padding-left: 2em;
+    margin-left: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    color: #8b949e;
+}
