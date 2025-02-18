@@ -134,6 +134,45 @@ b {
     font-weight: 900;
 }
 
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    /* transparent bg*/
+    background-color: transparent;
+
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    color: var(--text-color);
+    text-align: left;
+  cursor: pointer;
+  padding: 0px;
+  width: 10px;
+  height: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: transparent;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: transparent;
+  margin-right: 50px;
+}
+
 .topnav a.title {
     color: var(--secondary2);
 
@@ -147,7 +186,7 @@ b {
 /* Add a black background color to the top navigation */
 .topnav {
   background-image: linear-gradient(to right, var(--primary1), var(--primary2));
-  overflow: hidden;
+  /*overflow: hidden;*/
   box-shadow: 2px 2px 2px var(--secondary2);
   padding: 2px;
 
@@ -160,12 +199,14 @@ b {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
   color: var(--text-color);
-  text-align: center;
+  text-align: right;
   padding: 2px 10px;
+  gap: 10px;
+  margin: 0px 5px;
   text-decoration: none;
   font-size: 80%;
+  float: right;
 }
 
 /* Change the color of links on hover */
