@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #0A0A0A;/**/
+    --bg-color: #1A1A1A;/**/
     --text-color: #BFD2C7;/**/ 
     
     --primary1: #0A0A0A;/*Deep black for background, evoking mystery*/ 
@@ -13,7 +13,13 @@
 }
 
 body {
-    background-color: var(--primary1);
+    /*background-color: var(--primary1);*/
+    background-image: url("/images/bg.png");
+    /*center the image*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     line-height: 1.5;
@@ -229,6 +235,9 @@ h3,
 h4,
 h5,
 h6 {
+    background-image: linear-gradient(to right, var(--accent2), var(--secondary2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: var(--secondary2);
     margin-top: 24px;
     margin-bottom: 16px;
