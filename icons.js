@@ -1,7 +1,7 @@
 const images = "/images";
 
 const icons = [
-    { name: "profile_pic", url: "CyberShikei.github.io", img: `${images}/profile_pic.jpg` },
+    { name: "profile_pic", url: "https://CyberShikei.github.io", img: `${images}/profile_pic.jpg` },
     { name: "GitHub", url: "https://github.com/CyberShikei", img: `${images}/github_logo.png` },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/jacobus-petrus-ferreira-b888141a1/", img: `${images}/linkedin_logo.png` },
     { name: "Gmail", url: "mailto:cyber.shikei.com", img: `${images}/gmail_logo.png` },
