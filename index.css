@@ -30,6 +30,13 @@ body {
     margin-right: auto;
 }
 
+.welcome-image {
+    width: 100%;
+    height: 20px;
+    object-fit: cover;
+    float: left;
+    /*blur edges*/
+}
 
 .repo-grid {
     display: grid;
