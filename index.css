@@ -215,6 +215,13 @@ b {
     color: var(--accent2);
 }
 
+.logo {
+    width: 180px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0;
+    float: right;
+}
 
 h1,
 h2,
